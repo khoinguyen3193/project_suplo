@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+    <!-- <script src="js/owl.carousel.js"></script> -->
+    <title>Suplo</title>
+  </head>
+
+  <body>
+    <!-- pop-up modal -->
+    <div class="popup-modal" id="popup-modal">
+      <div class="popup">
+        <i class="fa fa-times" aria-hidden="true" id="popup-close"></i>
+        <div>
+          <div class="popup-content">
+            <div class="content-box">
+              <h2>ĐĂNG KÝ NHẬN TIN NGAY HÔM NAY</h2>
+              <p class="description">
+                Suplo hứa sẽ không gửi những mail với nội dung không quan trọng
+                hoặc spam. Các bạn là người đầu tiên biết được về:
+              </p>
+              <ul>
+                <li>Các sản phẩm khuyến mại với mức giá không thể thấp hơn.</li>
+                <li>
+                  Tin tức mới nhất về các sản phẩm mới, sản phẩm hot, flash
+                  sale, hot deal, ...
+                </li>
+                <li>Các sản phẩm khuyến mại với mức giá không thể thấp hơn.</li>
+                <li>
+                  Tin tức mới nhất về các sản phẩm mới, sản phẩm hot, flash
+                  sale, hot deal, ...
+                </li>
+              </ul>
+              <div class="form">
+                <div class="title">
+                  Đăng ký:
+                </div>
+                <form action="">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Nhập email của bạn ..."
+                  />
+                  <a href="">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  </a>
+                </form>
+              </div>
+              <div class="social">
+                <a href=""
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""
+                  ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                ></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /pop-up modal -->
+    <!-- fixed social icon -->
+    <div class="fixed-social-icon">
+      <a href="" class="facebook"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+        ><span>Facebook</span></a
+      >
+      <a href="" class="instagram"
+        ><i class="fa fa-instagram" aria-hidden="true"></i
+        ><span>Instagram</span></a
+      >
+      <a href="" class="youtube"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+        ><span>Youtube</span></a
+      >
+      <a href="" class="twitter"
+        ><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a
+      >
+      <a href="" class="google"
+        ><i class="fa fa-google-plus" aria-hidden="true"></i
+        ><span>Google</span></a
+      >
+      <a href="" class="linkedin"
+        ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ><span>Linked-in</span></a
+      >
+      <a href="javascript:avoid(0);" class="back-to-top"
+        ><i class="fa fa-chevron-up" aria-hidden="true"></i><span>Top</span></a
+      >
+    </div>
+    <!-- /fixed social icon -->
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+      <a href="./index.html">
+        <img src="images/logo-mobile.png" alt="" />
+      </a>
+      <div class="left">
+        <i
+          class="fa fa-shopping-cart"
+          aria-hidden="true"
+          onclick="cartBoxMobile();"
+        >
+        </i>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div id="cart-box-mobile">
+        <i
+          class="fa fa-times"
+          aria-hidden="true"
+          onclick="hideCartBoxMobile();"
+        ></i>
+        <p class="title">Giỏ hàng trống</p>
+        <p class="detail">Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+      </div>
+      <div class="mobile-mega-menu">
+        <div class="title">
+          <p>MENU</p>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul class="mobile-sub-menu-1">
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li>
+            <p>
+              <span class="sub-menu-name"
+                ><a href="./collection.html">Sản phẩm</a></span
+              >
+              <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+              <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+            </p>
+            <ul class="mobile-sub-menu-2">
+              <li>
+                <p>
+                  <span class="sub-menu-name"
+                    ><a href="./collection.html">Các loại tủ</a></span
+                  >
+                  <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                  <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+                </p>
+                <ul class="mobile-sub-menu-3">
+                  <li><a href="./collection.html">Tủ gỗ</a></li>
+                  <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                  <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <span class="sub-menu-name"
+                    ><a href="./collection.html">Các loại giường</a></span
+                  >
+                  <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                  <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+                </p>
+                <ul class="mobile-sub-menu-3">
+                  <li><a href="./collection.html">Tủ gỗ</a></li>
+                  <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                  <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <span class="sub-menu-name"
+                    ><a href="./collection.html">Các loại ghế</a></span
+                  >
+                  <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                  <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+                </p>
+                <ul class="mobile-sub-menu-3">
+                  <li><a href="./collection.html">Tủ gỗ</a></li>
+                  <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                  <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <span class="sub-menu-name"
+                    ><a href="./collection.html">Các loại bàn</a></span
+                  >
+                  <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                  <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+                </p>
+                <ul>
+                  <li class="mobile-sub-menu-3">
+                    <a href="./collection.html">Tủ gỗ</a>
+                  </li>
+                  <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                  <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <span class="sub-menu-name"
+                ><a href="./news.html">Tin tức</a></span
+              >
+              <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+              <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+            </p>
+            <ul class="mobile-sub-menu-2">
+              <li>
+                <p>
+                  <span class="sub-menu-name"
+                    ><a href="./news.html">Tin tức chung</a></span
+                  >
+                  <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                  <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+                </p>
+                <ul>
+                  <li>
+                    <a href="./news.html">Trong nước</a>
+                  </li>
+                  <li>
+                    <a href="./news.html">Thế giới</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="./index.html">Hướng dẫn bảo quản</a></li>
+              <li><a href="./index.html">Chất liệu</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html">Về chúng tôi</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+          <li><a href="./collection.html">Bộ sưu tập 2018</a></li>
+          <li><a href="./collection.html">Hàng mới nhất</a></li>
+          <li><a href="./login.html">Đăng nhập</a></li>
+          <li><a href="./register.html">Đăng ký</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /mobile nav -->
+    <!-- header -->
+  <header>
+    <div class="box">
+      <div class="left">
+        <ul>
+          <li><a href="./collection.html">Cửa Hàng</a></li>
+          <li><a href="./contact.html">Hỗ Trợ</a></li>
+          <li><a href="">FAQ</a></li>
+          <li>
+            <a href="tel:(+84) 934 323 882"
+              >Liên hệ :<span style="color: #c51230; font-weight: bold;">
+                (+84) 934 323 882</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="./login.html">Đăng nhập</a></li>
+          <li><a href="./register.html">Đăng ký</a></li>
+          <div class="cart">
+            <i
+              class="fa fa-shopping-cart"
+              aria-hidden="true"
+              onclick="myFunction();"
+            ></i>
+            <div id="cart-box">
+              <i
+                class="fa fa-times"
+                aria-hidden="true"
+                onclick="closeFunction();"
+              ></i>
+              <p class="title">Giỏ hàng trống</p>
+              <p class="detail">
+                bạn chưa có sản phẩm nào trong giỏ hàng
+              </p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+  <div class="container">
+    <div class="middle">
+<!-- logo -->
+<div class="brand">
+  <div class="logo">
+    <a href="./index.html">
+      <img src="images/logo.png" alt="" />
+    </a>
+  </div>
+  <div class="search-box">
+    <form action="">
+      <div>
+        <select name="category" id="category">
+          <option value="">Tất cả</option>
+          <option value="">Sản phẩm tiêu biểu</option>
+          <option value="">Bàn Gỗ</option>
+          <option value="">Ghế gỗ</option>
+          <option value="">Giường ngủ</option>
+          <option value="">Tủ gỗ</option>
+        </select>
+      </div>
+      <input type="text" name="" id="" placeholder="Tìm kiếm" />
+      <button type="submit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
+  </div>
+</div>
+<!-- /logo -->
+<!-- mobile-search-box -->
+<div class="mobile-search-box">
+  <form action="">
+    <select name="" id="">
+      <option value="">Tất cả</option>
+      <option value="">Sản phẩm tiêu biểu</option>
+      <option value="">Bàn Gỗ</option>
+      <option value="">Ghế gỗ</option>
+      <option value="">Giường ngủ</option>
+      <option value="">Tủ gỗ</option>
+    </select>
+    <div class="input-search-mobile">
+      <input type="text" name="" id="" placeholder="Tìm kiếm" />
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+  </form>
+</div>
+<!-- /mobile-search-box -->
+<!-- nav -->
+<nav>
+  <ul>
+    <li><a href="./index.html">Trang chủ</a></li>
+    <li class="mega">
+      <a href="./collection.html">sản phẩm</a>
+      <div class="product">
+        <ul>
+          <li class="product-category">
+            <a class="title" href="./collection.html">Các loại tủ</a>
+            <ul>
+              <li>
+                <a href="./collection.html">Tủ gỗ</a>
+              </li>
+              <li>
+                <a href="./collection.html">Tủ nhà bếp</a>
+              </li>
+              <li>
+                <a href="./collection.html">
+                  Tủ đựng quần áo
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="product-category">
+            <a class="title" href="./collection.html">Các loại tủ</a>
+            <ul>
+              <li>
+                <a href="./collection.html">Tủ gỗ</a>
+              </li>
+              <li>
+                <a href="./collection.html">Tủ nhà bếp</a>
+              </li>
+              <li>
+                <a href="./collection.html">
+                  Tủ đựng quần áo
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="product-category">
+            <a class="title" href="./collection.html">Các loại tủ</a>
+            <ul>
+              <li>
+                <a href="./collection.html">Tủ gỗ</a>
+              </li>
+              <li>
+                <a href="./collection.html">Tủ nhà bếp</a>
+              </li>
+              <li>
+                <a href="./collection.html">
+                  Tủ đựng quần áo
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="product-category">
+            <a class="title" href="./collection.html">Các loại tủ</a>
+            <ul>
+              <li>
+                <a href="./collection.html">Tủ gỗ</a>
+              </li>
+              <li>
+                <a href="./collection.html">Tủ nhà bếp</a>
+              </li>
+              <li>
+                <a href="./collection.html">
+                  Tủ đựng quần áo
+                </a>
+              </li>
+              <li>
+                <a href="./collection.html">Tủ gỗ</a>
+              </li>
+              <li>
+                <a href="./collection.html">Tủ nhà bếp</a>
+              </li>
+              <li>
+                <a href="./collection.html">
+                  Tủ đựng quần áo
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./collection.html">
+              <img
+                style="width: 100%;"
+                src="images/megamenu.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="news">
+      <a href="./news.html">
+        Tin tức
+      </a>
+      <div class="sub-news-1">
+        <ul>
+          <li class="mega-news">
+            <a href="./news.html"
+              >Tin tức chung<i
+                class="fa fa-arrow-right"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <div class="sub-news-2">
+              <ul>
+                <li><a href="./news.html">Trong nước</a></li>
+                <li><a href="./news.html">Thế giới</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./news.html">Hướng dẫn bảo quản</a></li>
+          <li><a href="./news.html">Chất liệu</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="./contact.html">Về chúng tôi</a></li>
+    <li><a href="./contact.html">liên hệ cửa hàng</a></li>
+    <li><a href="./collection.html">bộ sưu tập 2018</a></li>
+    <li><a href="./collection.html">hàng mới nhất</a></li>
+  </ul>
+</nav>
+<!-- /nav -->
+    </div>
+  </div>
+  <!-- all content -->
+    <div class="container">
+      <div class="middle">
+        <!-- slide-top -->
+        <div class="slide owl-carousel-item">
+          <div class="owl-carousel owl-theme slide-top">
+            <div class="item">
+              <img
+                src="https://theme.hstatic.net/1000302114/1000388860/14/ms_banner_img2.jpg?v=2095"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://theme.hstatic.net/1000302114/1000388860/14/ms_banner_img1.jpg?v=2095"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- /slide-top -->
+        <!-- san pham tieu bieu -->
+        <div class="feature-product">
+          <p class="title">sản phẩm tiêu biểu</p>
+          <div class="owl-carousel owl-theme slide-home-product">
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html"><img src="images/product1.png" alt="Product images" /></a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="items product-item">
+                  <div class="product-img">
+                    <a href="./item-detail.html">
+                      <img src="images/product1.png" alt="Product images" />
+                    </a>
+                    <div class="sale-off">25%</div>
+                  </div>
+                  <div class="product-detail">
+                    <p class="product-name">Bàn</p>
+                    <p class="product-type"><a href="./item-detail.html">Dynamo</a></p>
+                    <p class="product-price">2,999,000<sup>đ</sup></p>
+                  </div>
+                  <div class="buy-button">
+                    <button class="sold-out">
+                      <p>Tạm hết hàng</p>
+                    </button>
+                    <div class="buy-now">
+                      <button class="add-to-cart">
+                        <p>Thêm vào giỏ</p>
+                      </button>
+                      <button class="buy">
+                        <p>Mua ngay</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /san pham tieu bieu -->
+        <!-- home-selection-content -->
+        <div class="home-selection">
+          <p class="title">Danh mục tiêu biểu</p>
+          <div class="item-container">
+            <div class="collection">
+              <a href="./collection.html">
+                <div class="collection-name">
+                  <p>Bàn gỗ</p>
+                </div>
+                <div>
+                  <img src="images/collection-1.png" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="collection">
+              <a href="./collection.html">
+                <div class="collection-name">
+                  <p>Ghế gỗ</p>
+                </div>
+                <div>
+                  <img src="images/collection-3.png" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="collection">
+              <a href="./collection.html">
+                <div class="collection-name">
+                  <p>Giường gỗ</p>
+                </div>
+                <div>
+                  <img src="images/collection-3.png" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="collection">
+              <a href="./collection.html">
+                <div class="collection-name">
+                  <p>Tủ gỗ</p>
+                </div>
+                <div>
+                  <img src="images/collection-4.png" alt="" />
+                </div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <!-- /home-selection-content -->
+        <!-- home-selection-content-news -->
+        <div class="home-selection">
+          <p class="title">Tin tức</p>
+          <div class="news-box">
+            <div class="owl-carousel owl-theme owl-new-box">
+              <div class="items">
+                <div class="news-images">
+                  <a href="./blog.html">
+                    <img src="images/news-images-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="news-detail">
+                  <p class="title">
+                    <a href="./blog.html">Thiết kế nội thất căn hộ đầy đủ công năng dù diện tích chỉ
+                      30m2</a>
+                  </p>
+                  <p class="description">
+                    Chỉ cần một chút khéo léo bạn có thể mang đến những điểm
+                    khác biệt đủ để tạo nên sự cuốn hút và hiện đại trong ngôi
+                    nhà thân yêu.Ghế sofa màu vàng đủ khiến mọi người q...
+                  </p>
+                  <p class="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i
+                    ><span>30/07/18</span>
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    ><span>Suplo Sweet Dream</span>
+                    <i class="fa fa-comments" aria-hidden="true"
+                      ><span>0</span></i
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="news-images">
+                  <a href="./blog.html">
+                    <img src="images/news-images-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="news-detail">
+                  <p class="title">
+                    <a href="./blog.html">Thiết kế nội thất căn hộ đầy đủ công năng dù diện tích chỉ
+                      30m2</a>
+                  </p>
+                  <p class="description">
+                    Chỉ cần một chút khéo léo bạn có thể mang đến những điểm
+                    khác biệt đủ để tạo nên sự cuốn hút và hiện đại trong ngôi
+                    nhà thân yêu.Ghế sofa màu vàng đủ khiến mọi người q...
+                  </p>
+                  <p class="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i
+                    ><span>30/07/18</span>
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    ><span>Suplo Sweet Dream</span>
+                    <i class="fa fa-comments" aria-hidden="true"
+                      ><span>0</span></i
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="news-images">
+                  <a href="./blog.html">
+                    <img src="images/news-images-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="news-detail">
+                  <p class="title">
+                    <a href="./blog.html">Thiết kế nội thất căn hộ đầy đủ công năng dù diện tích chỉ
+                      30m2</a>
+                  </p>
+                  <p class="description">
+                    Chỉ cần một chút khéo léo bạn có thể mang đến những điểm
+                    khác biệt đủ để tạo nên sự cuốn hút và hiện đại trong ngôi
+                    nhà thân yêu.Ghế sofa màu vàng đủ khiến mọi người q...
+                  </p>
+                  <p class="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i
+                    ><span>30/07/18</span>
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    ><span>Suplo Sweet Dream</span>
+                    <i class="fa fa-comments" aria-hidden="true"
+                      ><span>0</span></i
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="news-images">
+                  <a href="./blog.html">
+                    <img src="images/news-images-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="news-detail">
+                  <p class="title">
+                    <a href="./blog.html">Thiết kế nội thất căn hộ đầy đủ công năng dù diện tích chỉ
+                      30m2</a>
+                  </p>
+                  <p class="description">
+                    Chỉ cần một chút khéo léo bạn có thể mang đến những điểm
+                    khác biệt đủ để tạo nên sự cuốn hút và hiện đại trong ngôi
+                    nhà thân yêu.Ghế sofa màu vàng đủ khiến mọi người q...
+                  </p>
+                  <p class="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i
+                    ><span>30/07/18</span>
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    ><span>Suplo Sweet Dream</span>
+                    <i class="fa fa-comments" aria-hidden="true"
+                      ><span>0</span></i
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="news-images">
+                  <a href="./blog.html">
+                    <img src="images/news-images-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="news-detail">
+                  <p class="title">
+                    <a href="./blog.html">Thiết kế nội thất căn hộ đầy đủ công năng dù diện tích chỉ
+                      30m2</a>
+                  </p>
+                  <p class="description">
+                    Chỉ cần một chút khéo léo bạn có thể mang đến những điểm
+                    khác biệt đủ để tạo nên sự cuốn hút và hiện đại trong ngôi
+                    nhà thân yêu.Ghế sofa màu vàng đủ khiến mọi người q...
+                  </p>
+                  <p class="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i
+                    ><span>30/07/18</span>
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    ><span>Suplo Sweet Dream</span>
+                    <i class="fa fa-comments" aria-hidden="true"
+                      ><span>0</span></i
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="news-images">
+                  <a href="./blog.html">
+                    <img src="images/news-images-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="news-detail">
+                  <p class="title">
+                    <a href="./blog.html">Thiết kế nội thất căn hộ đầy đủ công năng dù diện tích chỉ
+                      30m2</a>
+                  </p>
+                  <p class="description">
+                    Chỉ cần một chút khéo léo bạn có thể mang đến những điểm
+                    khác biệt đủ để tạo nên sự cuốn hút và hiện đại trong ngôi
+                    nhà thân yêu.Ghế sofa màu vàng đủ khiến mọi người q...
+                  </p>
+                  <p class="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i
+                    ><span>30/07/18</span>
+                    <i class="fa fa-user" aria-hidden="true"></i
+                    ><span>Suplo Sweet Dream</span>
+                    <i class="fa fa-comments" aria-hidden="true"
+                      ><span>0</span></i
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /home-selection-content-news -->
+        <!-- home-selection-content-decoration -->
+        <div class="home-selection">
+          <p class="title">THIẾT KẾ NỘI THẤT</p>
+          <div class="decoration">
+            <div class="decoration-item bed">
+              <img src="images/decoration-1.png" alt="" />
+              <div class="decoration-detail">
+                <p class="decoration-name">
+                  giường cao cấp
+                </p>
+                <p class="decoration-slogan">
+                  giấc ngủ tuyệt vời
+                </p>
+                <div>
+                  <a href="./collection.html">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+            <div class="decoration-item chair">
+              <img src="images/decoration-2.png" alt="" />
+              <div class="decoration-detail">
+                <p class="decoration-name">
+                  Tủ đựng đồ
+                </p>
+                <p class="decoration-slogan">
+                  tiết kiệm diện tích
+                </p>
+                <div>
+                  <a href="./collection.html">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+            <div class="decoration-item chair">
+              <img src="images/decoration-3.png" alt="" />
+              <div class="decoration-detail">
+                <p class="decoration-name">ghế ngồi</p>
+                <p class="decoration-slogan">tận hưởng sự dễ chịu</p>
+                <div>
+                  <a href="./collection.html">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /home-selection-content-decoration -->
+      </div>
+    </div>
+    <!-- all content -->
+    <!-- address -->
+    <div class="footer-container">
+      <div class="address">
+        <div class="home-contact-bg"></div>
+        <div class="address-detail">
+          <div class="home-selection">
+            <p class="title">địa chỉ</p>
+            <p class="description">
+              SUPLO hiện đang sở hữu hệ thống 16 Siêu thị Chăn ga gôi đệm tại
+              hai thành phố lớn của Việt Nam là Hà Nội và Thành Phố Hồ Chí Minh
+            </p>
+            <a href="" class="address-btn">hệ thống cửa hàng</a>
+          </div>
+        </div>
+      </div>
+      <!-- /address -->
+      <!--  -->
+      <footer>
+        <div class="wrapper">
+          <div class="left">
+            <div class="top">
+              <img src="images/footer-logo.png" alt="" />
+              <h2 class="title">SUPLO | SIÊU THỊ NỘI THẤT & TRANG TRÍ SUPLO</h2>
+              <p>
+                <span>Địa chỉ:</span> Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội
+              </p>
+              <p>
+                <span>Số điện thoại:</span>
+                <a href="tel:(+84) 934 323 882">(+84) 934 323 882</a>
+              </p>
+              <p>
+                <span>Email:</span>
+                <a href="mail:support@suplo.vn">support@suplo.vn</a>
+              </p>
+            </div>
+            <div class="social">
+              <p>TÌM CHÚNG TÔI TẠI</p>
+              <a href="https://instagram.com"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+              <a href="https://youtube.com"
+                ><i class="fa fa-youtube-play" aria-hidden="true"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a href="https://google.com"
+                ><i class="fa fa-google-plus" aria-hidden="true"></i
+              ></a>
+              <a href="https://linkedin.com"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="top">
+              <ul>
+                <li>
+                  <div style="padding-left: 15px;">
+                    <h2>VỀ SUPLO</h2>
+                    <ul>
+                      <li><a href="./news.html">Tin tức về suplo</a></li>
+                      <li><a href="./news.html">Tuyển dụng</a></li>
+                      <li><a href="./contact.html">Liên hệ</a></li>
+                      <li>
+                        <a href="./contact.html">Chính sách và điều khoản</a>
+                      </li>
+                      <li><a href="./contact.html">F.A.Q</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Thiết kế</h2>
+                    <ul>
+                      <li><a href="./collection.html">Thiết kế 3D</a></li>
+                      <li>
+                        <a href="./collection.html">Quy trình làm việc</a>
+                      </li>
+                      <li>
+                        <a href="./collection.html">Công trình của Suplo</a>
+                      </li>
+                      <li>
+                        <a href="./collection.html">Hướng dẫn và mẹo vặt</a>
+                      </li>
+                      <li><a href="./collection.html">Nguồn cảm hứng</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>SẢN PHẨM</h2>
+                    <ul>
+                      <li><a href="./collection.html">Sản phẩm</a></li>
+                      <li><a href="./collection.html">Hàng mới về</a></li>
+                      <li><a href="./collection.html">Bộ sưu tập 2018</a></li>
+                      <li><a href="./collection.html">Bán chạy nhất</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="copyright">
+                Copyrights © 2018 by Suplo. Powered by Haravan
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-footer">
+          <ul>
+            <li>
+              <a href="./collection.html">
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <p>Hàng mới</p>
+              </a>
+            </li>
+            <li>
+              <a href="./collection.html">
+                <i class="fa fa-gift" aria-hidden="true"></i>
+                <p>Khuyến mãi</p>
+              </a>
+            </li>
+            <li>
+              <a href="./login.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>Tài khoản</p>
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html">
+                <i
+                  class="fa fa-phone"
+                  style="transform: rotate(270deg);"
+                  aria-hidden="true"
+                ></i>
+                <p>Liên hệ</p>
+              </a>
+            </li>
+            <li>
+              <a href="./login.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <p>Giỏ hàng</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- mobile-footer -->
+
+      <!-- /mobile-footer -->
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+  <!-- script for modal -->
+  <script>
+    // come with modal only
+    window.addEventListener("load", (event) => {
+      document.getElementById("popup-modal").style.visibility = "visible";
+      document.getElementById("popup-modal").style.opacity = "1";
+    });
+    document.getElementById("popup-close").addEventListener("click", () => {
+      document.getElementById("popup-modal").style.visibility = "hidden";
+    });
+    // /come with modal only
+    // owl-carousel top slide
+    $(document).ready(function () {
+      $(".slide-top").owlCarousel({
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autplayHoverPause: true,
+        nav: false,
+        dots: false,
+        loop: true,
+        lazyLoad: true,
+        responsive: {
+          800: {
+            nav: true,
+            dots: true,
+          },
+        },
+      });
+      // new 1
+      $(".slide-top").owlCarousel({
+        items: 1,
+        loop: true,
+        dots: true,
+      });
+      $(".slide-home-product").owlCarousel({
+        items: 2,
+        autoplay: true,
+        nav: false,
+        dots: true,
+        loop: false,
+        lazyLoad: true,
+        responsive: {
+          1000: {
+            items: 4,
+            margin: 20,
+          },
+        },
+      });
+      $(".owl-new-box").owlCarousel({
+        items: 1,
+        margin: 20,
+        nav: false,
+        dots: true,
+        loop: false,
+        lazyLoad: true,
+        responsive: {
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    });
+  </script>
+  <!-- /script for modal -->
+</html>

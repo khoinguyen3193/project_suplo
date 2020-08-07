@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.elevatezoom.js" type="text/javascript"></script>
+    <title>Item detail</title>
+  </head>
+  <body>
+    <div class="fb-comment">
+      <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0"
+        nonce="Vr07FOE2"
+      ></script>
+    </div>
+<!-- fixed social icon -->
+  <div class="fixed-social-icon">
+    <a href="" class="facebook"
+      ><i class="fa fa-facebook" aria-hidden="true"></i
+      ><span>Facebook</span></a
+    >
+    <a href="" class="instagram"
+      ><i class="fa fa-instagram" aria-hidden="true"></i
+      ><span>Instagram</span></a
+    >
+    <a href="" class="youtube"
+      ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ><span>Youtube</span></a
+    >
+    <a href="" class="twitter"
+      ><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a
+    >
+    <a href="" class="google"
+      ><i class="fa fa-google-plus" aria-hidden="true"></i
+      ><span>Google</span></a
+    >
+    <a href="" class="linkedin"
+      ><i class="fa fa-linkedin" aria-hidden="true"></i
+      ><span>Linked-in</span></a
+    >
+    <a href="javascript:avoid(0);" class="back-to-top"
+      ><i class="fa fa-chevron-up" aria-hidden="true"></i><span>Top</span></a
+    >
+  </div>
+  <!-- /fixed social icon -->
+  <!-- mobile nav -->
+  <div class="mobile-nav">
+    <a href="./index.html">
+      <img src="images/logo-mobile.png" alt="" />
+    </a>
+    <div class="left">
+      <i
+        class="fa fa-shopping-cart"
+        aria-hidden="true"
+        onclick="cartBoxMobile();"
+      >
+      </i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div id="cart-box-mobile">
+      <i
+        class="fa fa-times"
+        aria-hidden="true"
+        onclick="hideCartBoxMobile();"
+      ></i>
+      <p class="title">Giỏ hàng trống</p>
+      <p class="detail">Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+    </div>
+    <div class="mobile-mega-menu">
+      <div class="title">
+        <p>MENU</p>
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul class="mobile-sub-menu-1">
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li>
+          <p>
+            <span class="sub-menu-name"><a href="./collection.html">Sản phẩm</a></span>
+            <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+            <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+          </p>
+          <ul class="mobile-sub-menu-2">
+            <li>
+              <p>
+                <span class="sub-menu-name"><a href="./collection.html">Các loại tủ</a></span>
+                <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+              </p>
+              <ul class="mobile-sub-menu-3">
+                <li><a href="./collection.html">Tủ gỗ</a></li>
+                <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                <span class="sub-menu-name"><a href="./collection.html">Các loại giường</a></span>
+                <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+              </p>
+              <ul class="mobile-sub-menu-3">
+                <li><a href="./collection.html">Tủ gỗ</a></li>
+                <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                <span class="sub-menu-name"><a href="./collection.html">Các loại ghế</a></span>
+                <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+              </p>
+              <ul class="mobile-sub-menu-3">
+                <li><a href="./collection.html">Tủ gỗ</a></li>
+                <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                <span class="sub-menu-name"><a href="./collection.html">Các loại bàn</a></span>
+                <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+              </p>
+              <ul>
+                <li class="mobile-sub-menu-3"><a href="./collection.html">Tủ gỗ</a></li>
+                <li><a href="./collection.html">Tủ nhà bếp</a></li>
+                <li><a href="./collection.html">Tủ đựng quần áo</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <span class="sub-menu-name"><a href="./news.html">Tin tức</a></span>
+            <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+            <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+          </p>
+          <ul class="mobile-sub-menu-2">
+            <li>
+              <p>
+                <span class="sub-menu-name"><a href="./news.html">Tin tức chung</a></span>
+                <i class="fa fa-plus sub-menu-show" aria-hidden="true"></i>
+                <i class="fa fa-minus sub-menu-hidden" aria-hidden="true"></i>
+              </p>
+              <ul>
+                <li>
+                  <a href="./news.html">Trong nước</a>
+                </li>
+                <li>
+                  <a href="./news.html">Thế giới</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="./index.html">Hướng dẫn bảo quản</a></li>
+            <li><a href="./index.html">Chất liệu</a></li>
+          </ul>
+        </li>
+        <li><a href="./contact.html">Về chúng tôi</a></li>
+        <li><a href="./contact.html">Liên hệ</a></li>
+        <li><a href="./collection.html">Bộ sưu tập 2018</a></li>
+        <li><a href="./collection.html">Hàng mới nhất</a></li>
+        <li><a href="./login.html">Đăng nhập</a></li>
+        <li><a href="./register.html">Đăng ký</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /mobile nav -->
+    <!-- header -->
+  <header>
+    <div class="box">
+      <div class="left">
+        <ul>
+          <li><a href="./collection.html">Cửa Hàng</a></li>
+          <li><a href="./contact.html">Hỗ Trợ</a></li>
+          <li><a href="">FAQ</a></li>
+          <li>
+            <a href="tel:(+84) 934 323 882"
+              >Liên hệ :<span style="color: #c51230; font-weight: bold;">
+                (+84) 934 323 882</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="./login.html">Đăng nhập</a></li>
+          <li><a href="./register.html">Đăng ký</a></li>
+          <div class="cart">
+            <i
+              class="fa fa-shopping-cart"
+              aria-hidden="true"
+              onclick="myFunction();"
+            ></i>
+            <div id="cart-box">
+              <i
+                class="fa fa-times"
+                aria-hidden="true"
+                onclick="closeFunction();"
+              ></i>
+              <p class="title">Giỏ hàng trống</p>
+              <p class="detail">
+                bạn chưa có sản phẩm nào trong giỏ hàng
+              </p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+    <!-- nav -->
+  <div class="container">
+    <div class="middle">
+      <!-- logo -->
+      <div class="brand">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="search-box">
+          <form action="">
+            <div>
+              <select name="category" id="category">
+                <option value="">Tất cả</option>
+                <option value="">Sản phẩm tiêu biểu</option>
+                <option value="">Bàn Gỗ</option>
+                <option value="">Ghế gỗ</option>
+                <option value="">Giường ngủ</option>
+                <option value="">Tủ gỗ</option>
+              </select>
+            </div>
+            <input type="text" name="" id="" placeholder="Tìm kiếm" />
+            <button type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- /logo -->
+      <!-- mobile-search-box -->
+      <div class="mobile-search-box">
+        <form action="">
+          <select name="" id="">
+            <option value="">Tất cả</option>
+            <option value="">Sản phẩm tiêu biểu</option>
+            <option value="">Bàn Gỗ</option>
+            <option value="">Ghế gỗ</option>
+            <option value="">Giường ngủ</option>
+            <option value="">Tủ gỗ</option>
+          </select>
+          <div class="input-search-mobile">
+            <input type="text" name="" id="" placeholder="Tìm kiếm" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </form>
+      </div>
+      <!-- /mobile-search-box -->
+      <!-- nav -->
+      <nav>
+        <ul>
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li class="mega">
+            <a href="./collection.html">sản phẩm</a>
+            <div class="product">
+              <ul>
+                <li class="product-category">
+                  <a class="title" href="./collection.html">Các loại tủ</a>
+                  <ul>
+                    <li>
+                      <a href="./collection.html">Tủ gỗ</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Tủ nhà bếp</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">
+                        Tủ đựng quần áo
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="product-category">
+                  <a class="title" href="./collection.html">Các loại tủ</a>
+                  <ul>
+                    <li>
+                      <a href="./collection.html">Tủ gỗ</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Tủ nhà bếp</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">
+                        Tủ đựng quần áo
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="product-category">
+                  <a class="title" href="./collection.html">Các loại tủ</a>
+                  <ul>
+                    <li>
+                      <a href="./collection.html">Tủ gỗ</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Tủ nhà bếp</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">
+                        Tủ đựng quần áo
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="product-category">
+                  <a class="title" href="./collection.html">Các loại tủ</a>
+                  <ul>
+                    <li>
+                      <a href="./collection.html">Tủ gỗ</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Tủ nhà bếp</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">
+                        Tủ đựng quần áo
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Tủ gỗ</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Tủ nhà bếp</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">
+                        Tủ đựng quần áo
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./collection.html">
+                    <img
+                      style="width: 100%;"
+                      src="images/megamenu.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="news">
+            <a href="./news.html">
+              Tin tức
+            </a>
+            <div class="sub-news-1">
+              <ul>
+                <li class="mega-news">
+                  <a href="./news.html"
+                    >Tin tức chung<i
+                      class="fa fa-arrow-right"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <div class="sub-news-2">
+                    <ul>
+                      <li><a href="./news.html">Trong nước</a></li>
+                      <li><a href="./news.html">Thế giới</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./news.html">Hướng dẫn bảo quản</a></li>
+                <li><a href="./news.html">Chất liệu</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./contact.html">Về chúng tôi</a></li>
+          <li><a href="./contact.html">liên hệ cửa hàng</a></li>
+          <li><a href="./collection.html">bộ sưu tập 2018</a></li>
+          <li><a href="./collection.html">hàng mới nhất</a></li>
+        </ul>
+      </nav>
+      <!-- /nav -->
+    </div>
+  </div>
+  <!-- / nav  -->
+    <!-- PAGE thumbnail -->
+    <div class="news-page">
+      <div class="background-image">
+        <div class="rgba-background"></div>
+        <div class="content">
+          <h2 class="title">Tất cả sản phẩm</h2>
+          <p>
+            <a href="./index.html">Trang chủ</a> / <a href="">Tất cả sản phẩm</a> / Sản phẩm
+            01
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /PAGE thumbnail -->
+    <!-- all content gone here -->
+    <div class="container">
+      <div class="middle">
+        <div id="item-detail">
+          <div class="left">
+            <div class="big-image">
+              <div style="width: 100%;">
+                <img
+                  id="display-images"
+                  src="images/item-big-1.jpg"
+                  data-zoom-image="images/item-big-1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="small-box">
+              <ul>
+                <li class="control-images">
+                  <a
+                    href="javascript:void(0)"
+                    data-img="images/item-detail-1.jpg"
+                    data-zoom-image="images/item-big-1.jpg"
+                  >
+                    <img id="img_01" src="images/item-detail-1.jpg" alt="" />
+                  </a>
+                </li>
+                <li class="control-images">
+                  <a
+                    href="javascript:void(0)"
+                    data-img="images/item-detail-2.jpg"
+                    data-zoom-image="images/item-big-2.jpg"
+                  >
+                    <img id="img_01" src="images/item-detail-2.jpg" alt="" />
+                  </a>
+                </li>
+                <li class="control-images">
+                  <a
+                    href="javascript:void(0)"
+                    data-img="images/item-detail-3.jpg"
+                    data-zoom-image="images/item-big-3.jpg"
+                  >
+                    <img id="img_01" src="images/item-detail-3.jpg" alt="" />
+                  </a>
+                </li>
+                <li class="control-images">
+                  <a
+                    href="javascript:void(0)"
+                    data-img="images/item-detail-4.jpg"
+                    data-zoom-image="images/item-big-4.jpg"
+                  >
+                    <img id="img_01" src="images/item-detail-4.jpg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <p class="collection-name">Tủ</p>
+            <p class="item-name">albany</p>
+            <p class="description">
+              <span class="on-stock-item">Còn hàng</span>
+              <span class="brand-name"
+                >Thương hiệu:
+                <span style="color: #c51230; font-weight: bold;"
+                  >Suplo</span
+                ></span
+              >
+              <span> | </span>
+              <span class="item-code">Mã SP: SUPLO-014</span>
+            </p>
+            <p class="sharing-item">
+              <span class="title">Chia sẻ trên</span>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </p>
+            <p class="item-price">6,999,000<sup>đ</sup></p>
+            <div class="color-radio">
+              <p class="title">Màu sắc&nbsp;&nbsp;&nbsp;</p>
+              <div class="color-picker">
+                <input type="radio" name="color" id="pick-a-color" />
+                <label for="pick-a-color" class="pick-a-color">
+                  <span>Nâu</span>
+                  <div>
+                    <img
+                      src="images/select-soldout.png"
+                      alt=""
+                      class="select-soldout"
+                      style="visibility: hidden;"
+                    />
+                    <img
+                      src="images/select-pro.png"
+                      alt=""
+                      class="select-pro"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="color-picker">
+                <input type="radio" name="color" id="pick-a-color" />
+                <label for="pick-a-color" class="pick-a-color">
+                  <span>Xanh</span>
+                  <div>
+                    <img
+                      src="images/select-soldout.png"
+                      alt=""
+                      class="select-soldout"
+                    />
+                    <img
+                      src="images/select-pro.png"
+                      alt=""
+                      class="select-pro"
+                      style="visibility: hidden;"
+                    />
+                  </div>
+                </label>
+              </div>
+            </div>
+            <p class="hotline">
+              Hotline hỗ trợ bán hàng 24/7:
+              <a href="tel:(+84) 934 323 882">(+84) 934 323 882</a>
+            </p>
+            <div class="number-of-item">
+              <p class="title">số lượng &nbsp;&nbsp;</p>
+              <div class="input-box">
+                <span><i class="fa fa-minus"></i></span>
+                <input
+                  type="number"
+                  name=""
+                  id="number-of-item"
+                  value="1"
+                  min="1"
+                  pattern=""
+                />
+                <span><i class="fa fa-plus"></i></span>
+              </div>
+            </div>
+            <div class="buy-button">
+              <button type="submit">Thêm vào giỏ</button>
+              <button type="button">Mua ngay</button>
+            </div>
+            <div class="item-short-description">
+              <p>
+                Ghế sofa 2 chỗ NORMANDY có thiết kế hiện đại, đẹp mắt với khung
+                gỗ chắc chắn và đệm ngồi êm ái. Hãy kết hợp vài chiếc sofa này
+                với bàn cà phê và ghế bành NORMANDY để tiếp đãi bạn bè và khách
+                quý đến nhà.
+              </p>
+            </div>
+          </div>
+          <!-- full information -->
+          <div class="full-information">
+            <div class="information-table">
+              <div class="table-title">
+                <button
+                  class="table-link active"
+                  onclick="openTab(event,'table-1')"
+                >
+                  mô tả sản phẩm
+                </button>
+                <button class="table-link" onclick="openTab(event,'table-2')">
+                  hướng dẫn bảo quản
+                </button>
+                <button class="table-link" onclick="openTab(event,'table-3')">
+                  hình ảnh
+                </button>
+                <button class="table-link" onclick="openTab(event,'table-4')">
+                  bình luận
+                </button>
+              </div>
+              <div class="table-content">
+                <div class="table" id="table-1" style="display: block;">
+                  <p>
+                    Đây là loại bàn được thiết kế có nhiều tính năng nổi bật và
+                    tiện ích như: Có thể gấp gọn khi không sử dụng, thao tác gấp
+                    – mở dễ dàng, bàn được thiết kế chắc chắn, chịu lực tốt,
+                    trọng lượng nhẹ.
+                  </p>
+                  <p>
+                    Bàn ăn thông minh là một loại bàn nói chung và thường được
+                    sử dụng cho các phòng chung cư, nhà ở có diện tích nhỏ,
+                    phong trọ sinh viên,… rất được ưa chuộng trong thời gian gần
+                    đây.
+                  </p>
+                  <p>
+                    Trên thế giới ở các nước phát triển như Châu Âu, Bắc Mỹ,
+                    Nhật Bản, Singapore,… loại bàn này được sử dụng phổ biến bởi
+                    hầu hết các gia đình.
+                  </p>
+                  <img src="" alt="" />
+                  <p>
+                    Ưu điểm
+                  </p>
+
+                  <ul>
+                    <li>
+                      Chất liệu sử dụng thường là gỗ công nghiệp chính vì vậy
+                      giá tương đối phù hợp với sự lựa chọn của nhiều cá nhân,
+                      gia đình. Ngoài ra những khách hàng có nhu cầu cao cấp
+                      cũng có thể dễ dàng sở hữu loại bàn này bằng chất liệu gỗ
+                      tự nhiên, nhưng với chi phí sẽ cao hơn khá nhiều so với
+                      chất liệu gỗ công nghiệp.
+                    </li>
+                    <li>
+                      Khả năng chịu lực tốt với thiết kế được tính toán kỹ
+                      lưỡng, tuổi thọ sử dụng cao.
+                    </li>
+                    <li>
+                      Không bị phai màu trong quá trình sử dụng với môi trường
+                      tự nhiên.
+                    </li>
+                    <li>
+                      Có khả năng chống thấm tốt, chịu va đập tốt.
+                    </li>
+                    <li>
+                      Dễ dàng di chuyển, vệ sinh và cất gọn gàng.
+                    </li>
+                  </ul>
+                  <p>
+                    Nhược điểm
+                  </p>
+                  <ul>
+                    <li>
+                      Loại bàn ăn thông minh tùy loại, một số thường hơi khó sử
+                      dụng đối với người cao tuổi.
+                    </li>
+                    <li>
+                      Khả năng chịu lực chưa tốt bằng bàn ăn thông thường.
+                    </li>
+                    <li>
+                      Khi sử dụng hàng kém chất lượng đôi khi bị kẹt và khó khăn
+                      trong thao tác kéo hoặc gập.
+                    </li>
+                  </ul>
+                  <p>
+                    Có nên sử dụng bàn ăn thông minh hay không
+                  </p>
+                  <p>
+                    Đối với thiết kế nội thất dành cho những gia đình có diện
+                    tích phòng nhỏ, chật chội hoặc đơn giản là bạn yêu thích
+                    những đồ nội thất thông minh. Loại bàn này mang lại hiệu quả
+                    đáng kể cho việc cải thiện không gian sinh hoạt mà mỗi gia
+                    đình có thể cân nhắc sở hữu. Không chỉ các thiết bị điện tử
+                    mà đồ nội thất hiện nay cũng đang được áp dụng xu hướng
+                    thiết kế ngày càng thông minh hơn. Chính vì vậy bạn sẽ không
+                    muốn bỏ qua những tiện ích mà chúng có thể mang lại. Hơn thế
+                    nữa khi sử dụng các đồ nội thất thông minh sẽ kích thích sự
+                    tư duy, sáng tạo của trẻ nhỏ một cách rất tốt và tự nhiên.
+                  </p>
+                  <p>
+                    Phân loại bàn ăn thông minh
+                  </p>
+                  <p>
+                    Hiện nay trên thị trường bàn ăn thông minh được phân chia
+                    dựa trên 2 yếu tố chính đó là chất liệu, cấu tạo – chức
+                    năng. Dưới đây chúng ta hãy cùng đi tìm hiểu chi tiết về
+                    từng loại nhé.
+                  </p>
+                  <p>
+                    Gỗ công nghiệp
+                  </p>
+                  <p>
+                    Loại bàn ăn có giá thành thấp nhất đó là sử dụng gỗ công
+                    nghiệp với cốt gỗ là MFC, MDF, HDF,… Bề mặt có thể phủ các
+                    chất liệu Melamine hoặc kính cường lực tùy theo nhu cầu, sở
+                    thích của gia chủ(tuy nhiên mặt phủ kính cường lực giá sẽ
+                    cao hơn khá nhiều so với một số chất liệu phủ thông thường).
+                  </p>
+                  <p>
+                    Gỗ tự nhiên
+                  </p>
+                  <p>
+                    Gỗ tự nhiên được sử dụng không phổ biến nhiều trong chế tạo
+                    bàn ăn thông minh như gỗ công nghiệp, tuy nhiên nhu cầu rất
+                    đa dạng của khách hàng cao cấp nên loại gỗ này vẫn được sử
+                    dụng. Tuy nhiên việc chế tạo bàn ăn thông minh bằng gỗ tự
+                    nhiên cũng khá tốn kém chi phí, ngược lại sản phẩm nhìn đẹp,
+                    sang trọng hơn.
+                  </p>
+                  <p>
+                    Inox – thép chống rỉ
+                  </p>
+                  <p>
+                    Nếu chúng ta nghĩ sử dụng inox hay thép chống rỉ để làm bàn
+                    ăn thì chúng sẽ rất nặng thì đó là một suy nghĩ chưa đúng.
+                    Hiện nay các loại thép cường lực – inox được sản xuất với độ
+                    bền, chịu lực rất cao mà trọng lượng thì không hề nặng. Khi
+                    thiết kế làm bàn ăn thông minh chúng được gia công mỏng –
+                    dẹt – gọn nhẹ – mẫu mã đẹp,… rất tiện lợi sử dụng trong gia
+                    đình.
+                  </p>
+                  <p>
+                    Phân loại dựa trên cấu tạo và chức năng
+                  </p>
+                  <p>
+                    Chúng tôi tìm hiểu thì thấy phân loại này có 2 loại chính đó
+                    là bàn ăn kéo ngang và bàn ăn gấp gọn, mỗi loại có đặc điểm
+                    như thế nào. Hãy cùng tìm hiểu với các thông tin dưới đây mà
+                    chúng tôi tổng hợp được.
+                  </p>
+                  <p>
+                    Bàn ăn thông minh kéo ngang
+                  </p>
+                  <p>
+                    Ý tưởng thiết kế bàn ăn loại này đó là một chiếc bàn sẽ được
+                    kéo ngang gọn lại với kích thước chỉ bằng khoẳng 1/5 so với
+                    kích thước ban đầu. Thao tác rất đơn giản chỉ cần mở chốt,
+                    sau đó bạn có thể dễ dàng kéo bàn ra hoặc đóng bàn vào tùy
+                    ý. Ưu điểm của loại bàn ăn này đó là thực hiện đơn giản,
+                    không cầu kỳ mà ai cũng có thể làm được.
+                  </p>
+                  <p>
+                    Bàn ăn thông minh gấp gọn
+                  </p>
+                  <p>
+                    Ý tưởng thiết kế loại bàn ăn này đó là từ 1 chiếc bàn ăn lớn
+                    làm sao có thể gấp gọn chúng lại chỉ còn là một đồ vật nhỏ.
+                    Từ ghế, chân bàn, thanh ngang, đến cả mặt bàn,… Việc thiết
+                    kế bàn ăn kiểu gấp gọn tốn chi tiết hơn khá nhiều so với bàn
+                    ăn kéo ngang. Nhược điểm thao tác gấp cần tuân thủ đúng các
+                    bước, cần thời gian để làm quen với việc này và thường khó
+                    với người mới sử dụng.
+                  </p>
+                </div>
+                <div class="table" id="table-2">
+                  <p>
+                    - Vệ sinh sản phẩm bằng khăn ẩm, sau đó lau khô ngay bằng
+                    khăn mềm
+                  </p>
+                  <p>
+                    - Đặt sản phẩm tại nơi khô thoáng, tránh độ ẩm cao, tránh
+                    nhiệt độ cao, nguồn sáng mạnh và các vật dễ cháy.
+                  </p>
+                  <p>
+                    - Tránh để sản phẩm tiếp xúc với nước và nhiệt độ cao trong
+                    thời gian dài.
+                  </p>
+                  <p>
+                    - Không dùng vật sắc nhọn chà xát sản phẩm.
+                  </p>
+                </div>
+                <div class="table" id="table-3">
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                </div>
+                <div class="table" id="table-4">
+                  <div
+                    class="fb-comments"
+                    data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+                    data-numposts="2"
+                    data-width=""
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="product-buynow-sidebar">
+              <div class="fixed-item">
+                <p class="item-collection">Tủ</p>
+                <p class="item-name">albany</p>
+                <div>
+                  <img src="images/sticky-img-item.png" alt="" />
+                </div>
+                <p class="item-price">6,999,000<sup>đ</sup></p>
+                <button class="buy">Mua ngay</button>
+              </div>
+            </div>
+          </div>
+          <div class="feature-product">
+            <p class="title">sản phẩm tương tự</p>
+          </div>
+          <div class="owl-carousel owl-theme slide-detail-item">
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <a href="./item-detail.html">
+                  <img src="images/product1.png" alt="Product images" />
+                </a>
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+              <div class="buy-button">
+                <button class="sold-out">
+                  <p>Tạm hết hàng</p>
+                </button>
+                <div class="buy-now">
+                  <button class="add-to-cart">
+                    <p>Thêm vào giỏ</p>
+                  </button>
+                  <button class="buy">
+                    <p>Mua ngay</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-product">
+            <p class="title">sản phẩm đã xem</p>
+          </div>
+          <div class="owl-carousel owl-theme history-view">
+            <div class="items product-item">
+              <div class="product-img">
+                <img src="images/product1.png" alt="Product images" />
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <img src="images/product1.png" alt="Product images" />
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <img src="images/product1.png" alt="Product images" />
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+            </div>
+            <div class="items product-item">
+              <div class="product-img">
+                <img src="images/product1.png" alt="Product images" />
+                <div class="sale-off">25%</div>
+              </div>
+              <div class="product-detail">
+                <p class="product-name">Bàn</p>
+                <p class="product-type">Dynamo</p>
+                <p class="product-price">2,999,000<sup>đ</sup></p>
+              </div>
+            </div>
+          </div>
+          <!-- /full information -->
+        </div>
+      </div>
+    </div>
+    <!-- /all content -->
+    <!-- footer -->
+  <div class="footer-container">
+    <footer>
+      <div class="wrapper">
+        <div class="left">
+          <div class="top">
+            <img src="images/footer-logo.png" alt="" />
+            <h2 class="title">SUPLO | SIÊU THỊ NỘI THẤT & TRANG TRÍ SUPLO</h2>
+            <p>
+              <span>Địa chỉ:</span> Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội
+            </p>
+            <p>
+              <span>Số điện thoại:</span>
+              <a href="tel:(+84) 934 323 882">(+84) 934 323 882</a>
+            </p>
+            <p>
+              <span>Email:</span>
+              <a href="mail:support@suplo.vn">support@suplo.vn</a>
+            </p>
+          </div>
+          <div class="social">
+            <p>TÌM CHÚNG TÔI TẠI</p>
+            <a href="https://instagram.com"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="https://facebook.com"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="https://youtube.com"
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="https://google.com"
+              ><i class="fa fa-google-plus" aria-hidden="true"></i
+            ></a>
+            <a href="https://linkedin.com"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <ul>
+              <li>
+                <div style="padding-left: 15px;">
+                  <h2>VỀ SUPLO</h2>
+                  <ul>
+                    <li><a href="./news.html">Tin tức về suplo</a></li>
+                    <li><a href="./news.html">Tuyển dụng</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
+                    <li>
+                      <a href="./contact.html">Chính sách và điều khoản</a>
+                    </li>
+                    <li><a href="./contact.html">F.A.Q</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>Thiết kế</h2>
+                  <ul>
+                    <li><a href="./collection.html">Thiết kế 3D</a></li>
+                    <li>
+                      <a href="./collection.html">Quy trình làm việc</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Công trình của Suplo</a>
+                    </li>
+                    <li>
+                      <a href="./collection.html">Hướng dẫn và mẹo vặt</a>
+                    </li>
+                    <li><a href="./collection.html">Nguồn cảm hứng</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>SẢN PHẨM</h2>
+                  <ul>
+                    <li><a href="./collection.html">Sản phẩm</a></li>
+                    <li><a href="./collection.html">Hàng mới về</a></li>
+                    <li><a href="./collection.html">Bộ sưu tập 2018</a></li>
+                    <li><a href="./collection.html">Bán chạy nhất</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom">
+            <div class="copyright">
+              Copyrights © 2018 by Suplo. Powered by Haravan
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-footer">
+        <ul>
+          <li>
+            <a href="./collection.html">
+              <i class="fa fa-tag" aria-hidden="true"></i>
+              <p>Hàng mới</p>
+            </a>
+          </li>
+          <li>
+            <a href="./collection.html">
+              <i class="fa fa-gift" aria-hidden="true"></i>
+              <p>Khuyến mãi</p>
+            </a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <p>Tài khoản</p>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <i
+                class="fa fa-phone"
+                style="transform: rotate(270deg);"
+                aria-hidden="true"
+              ></i>
+              <p>Liên hệ</p>
+            </a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <p>Giỏ hàng</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- /footer -->
+  </body>
+  <script src="js/index.js"></script>
+  <!-- script for control images -->
+  <script>
+    let arrImg =[];
+    arrImg.push('images/item-big-1.jpg');
+    arrImg.push('images/item-big-2.jpg');
+    arrImg.push('images/item-big-3.jpg');
+    arrImg.push('images/item-big-4.jpg');
+    let arr = document.getElementsByClassName('control-images');
+    let displayImage = document.getElementById('display-images').src;
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      element.addEventListener('click',()=>{
+        document.getElementById('display-images').src = arrImg[index];
+      })
+    }
+  </script>
+  <!-- /script for control images -->
+  <!-- script for input number item -->
+  <script>
+    let temp = document.getElementsByClassName("input-box")[0];
+    let minus = temp.children[0];
+    let plus = temp.children[2];
+    let inputNumber = temp.children[1];
+    minus.addEventListener("click", () => {
+      let i = parseInt(temp.children[1].value);
+      if (i >= 2) {
+        i -= 1;
+        document.getElementsByClassName("input-box")[0].children[1].value = i;
+      }
+    });
+    plus.addEventListener("click", () => {
+      let i = parseInt(temp.children[1].value);
+      i += 1;
+      document.getElementsByClassName("input-box")[0].children[1].value = i;
+    });
+  </script>
+  <!-- /script for input number item -->
+  <!-- script for information-table -->
+  <script>
+    const openTab = (evt, className) => {
+      let table = document.getElementsByClassName("table");
+      for (let index = 0; index < table.length; index++) {
+        const element = table[index];
+        element.style.display = "none";
+      }
+      let tableLink = document.getElementsByClassName("table-link");
+      for (let index = 0; index < tableLink.length; index++) {
+        const element = tableLink[index];
+        element.classList.remove("active");
+      }
+      document.getElementById(className).style.display = "block";
+      evt.currentTarget.className += " active";
+      if (
+        document.getElementsByClassName("table-content")[0].offsetHeight <
+        document.getElementsByClassName("fixed-item")[0].offsetHeight
+      ) {
+        document.getElementsByClassName("fixed-item")[0].style.position =
+          "static";
+      } else {
+        document.getElementsByClassName("fixed-item")[0].style.position =
+          "relative";
+        document.getElementsByClassName("fixed-item")[0].style.top = "0px";
+      }
+    };
+    let box = document.getElementsByClassName("fixed-item")[0];
+    let boxBegin = 1223;
+    window.addEventListener("resize", () => {
+      boxBegin = document
+        .getElementsByClassName("fixed-item")[0]
+        .getBoundingClientRect().top;
+    });
+    let boxHeight = box.offsetHeight;
+    let containerBoxHeight = document.getElementsByClassName(
+      "information-table"
+    )[0].offsetHeight;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < boxBegin) {
+        document.getElementsByClassName("fixed-item")[0].style.position =
+          "static";
+      } else {
+        document.getElementsByClassName("fixed-item")[0].style.position =
+          "relative";
+      }
+      if (
+        boxBegin < window.scrollY &&
+        window.scrollY < boxBegin + containerBoxHeight - boxHeight - 20
+      ) {
+        let temp = Math.abs(window.scrollY - boxBegin + 30);
+        document.getElementsByClassName("fixed-item")[0].style.top =
+          temp + "px";
+      }
+    });
+    $(document).ready(function () {
+      $(".slide-detail-item").owlCarousel({
+        items: 2,
+        autoplay: false,
+        nav: false,
+        dots: true,
+        loop: false,
+        lazyLoad: true,
+        responsive: {
+          1000: {
+            items: 4,
+            margin: 30,
+          },
+          800: {
+            items: 3,
+          },
+          700: {
+            items: 2,
+          },
+        },
+      });
+    });
+    $(".history-view").owlCarousel({
+      items: 2,
+      autoplay: false,
+      nav: false,
+      dots: false,
+      loop: false,
+      lazyLoad: true,
+      responsive: {
+        1000: {
+          items: 4,
+          margin: 30,
+        },
+        800: {
+          items: 3,
+        },
+        700: {
+          items: 2,
+        },
+      },
+    });
+  </script>
+
+  <!-- /script for information-table -->
+</html>
