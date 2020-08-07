@@ -406,6 +406,12 @@ nav ul li .product .title {
   overflow: hidden;
   position: relative;
 }
+.item .product-img img{
+  transition: 0.5s;
+}
+.item .product-img img:hover{
+  transform: scale(1.1);
+}
 .items .product-img .sale-off{
   position: absolute;
   top: 5px;
@@ -531,10 +537,10 @@ nav ul li .product .title {
   width: 100%;
   transition: 0.5s;
 }
-.home-selection .item-container .collection:hover > div > img {
+.home-selection .item-container .collection:hover > a > div > img {
   transform: scale(1.2);
 }
-.home-selection .item-container .collection:hover > .collection-name {
+.home-selection .item-container .collection:hover > a > .collection-name {
   background: #c51230;
 }
 /* news-box */
